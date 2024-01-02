@@ -8,12 +8,25 @@
   },
   "keywords": [
     "nodejs",
-    "exressjs",
-    "mangojs"
+    "expressjs",
+    "mongodb"
   ],
   "author": "Jamshid Khaytbaev",
   "license": "ISC",
   "dependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }

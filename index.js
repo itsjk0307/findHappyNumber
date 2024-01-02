@@ -1,16 +1,17 @@
-const findHappyNumber = (num) => {
-  num = String(num).split("");
+const path = require("path");
+// import * as path from "path";
 
-  let happyNumbers = num.reduce((previousValue, currentValue) => {
-    const happyCount = num.filter((val) => val == currentValue).length;
+// console.log(__dirname); // Directory name
+// console.log(__filename); // File name
 
-    let newObj = { ...previousValue };
-    if (currentValue == happyCount) newObj[currentValue] = happyCount;
-    return newObj;
-  }, {});
+// console.log(path.basename("C:/Users/user/OneDrive/Desktop/NodeJs/index.html"));
+// Returns: 'index.html'
 
-  happyNumbers = Object.values(happyNumbers);
-  return `Happy number is ${happyNumbers[happyNumbers.length - 1]}`;
-};
+// console.log(
+//   path.basename("C:/Users/user/OneDrive/Desktop/NodeJs/index.html", ".html")
+// );
+// Returns: 'index'
 
-console.log(findHappyNumber(8182828828284698333n));
+// console.log(path.dirname("/foo/bar/baz/asdf/quux")); // Returns: '/foo/bar/baz/asdf'
+
+console.log(path.extname(index.js));
